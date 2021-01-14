@@ -1,0 +1,11 @@
+<div class="flex flex-flow-wrap flex-between flex-align-center page-header-container">
+
+    <img [src]="logoSrc" class="logo" />
+
+    <div class="flex flex-between flex-align-center header-content">
+        <div class="header-btn" *ngFor='let data of headerData'>{{data}}</div>
+        <div class="login-btn titles">{{loginTitle}}</div>
+        <div class="signup-btn titles">{{signUpTitle}}</div>
+    </div>
+
+</div>

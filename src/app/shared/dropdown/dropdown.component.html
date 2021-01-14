@@ -1,0 +1,10 @@
+<div class="dropdown-wrapper">
+    <div class="dropdown-container">
+        <div (click)="toggleDropdown()" class="dropdown-trigger"><span *ngIf="isEmpty(selectedVal)">{{selectedVal.name}}</span>
+            <div class="arrow"></div>
+        </div>
+        <div [ngClass]="(dropdownShow) ? 'dropdownOpen' : 'dropdownClose'" class="options">
+            <span *ngFor="let data of optionsData" class="option" [data-value]="data.value" [ngClass]="(selectedVal.id === data.id)? 'selected' : ''" (click)="selectEmi(data)">{{data.name}}</span>
+        </div>
+    </div>
+</div>

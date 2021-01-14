@@ -1,0 +1,9 @@
+<div class="total-container">
+    <div class="values" *ngFor="let data of finalData">
+        <div class="text">{{data.name}}</div>
+        <div class="val">&#8377; {{data.value | formatedCurrency}}</div>
+    </div>
+    <div class="submit-button">
+        GET MONEY
+    </div>
+</div>

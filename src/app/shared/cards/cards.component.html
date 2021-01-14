@@ -1,0 +1,5 @@
+<div class="card-container" [ngClass]="{'selected-card': cardData.selected}">
+    <img [src]="cardData.src" class="card-img" />
+    <div class="text">{{cardData.name}}</div>
+    <div class="description">{{cardData.description}}</div>
+</div>

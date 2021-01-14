@@ -1,0 +1,9 @@
+<div *ngIf="isEmpty(sliderContent)" class="container">
+    <div class="heading">{{sliderContent.name}}</div>
+    <div class="value"> &#8377; {{finalRangeValue | formatedCurrency}}</div>
+    <input min="0" [(ngModel)]="rangeValue" max="100" [style.background]="sliderRangeColor" class="slider" type="range" (input)="hi($event)" />
+    <div class="range">
+        <div class="max">&#8377; {{sliderContent.min | formatedCurrency}}</div>
+        <div class="min">&#8377; {{sliderContent.max | formatedCurrency}}</div>
+    </div>
+</div>

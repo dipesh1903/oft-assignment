@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('/assets/fonts/Montserrat/Montserrat-Light.ttf')
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('/assets/fonts/Montserrat/Montserrat-SemiBold.ttf')
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('/assets/fonts/Montserrat/Montserrat-Medium.ttf')
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('/assets/fonts/Montserrat/Montserrat-Regular.ttf')
+}
+
+.no-shrink {
+    flex-shrink: 0;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex {
+    display: table-cell;
+    display: flex;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-col-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-around {
+    justify-content: space-around;
+}
+
+.flex-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-between {
+    justify-content: space-between;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-align-start {
+    align-items: flex-start;
+}
+
+.flex-align-stretch {
+    align-items: stretch;
+}
+
+.flex-align-end {
+    align-items: flex-end;
+}
+
+.flex-align-baseline {
+    align-items: baseline;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-flow-wrap {
+    flex-flow: wrap;
+}

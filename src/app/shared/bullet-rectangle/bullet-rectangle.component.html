@@ -1,0 +1,5 @@
+<div *ngIf="matrix" class="container">
+    <div class="bullet-row" *ngFor="let row of matrixConverted.row">
+        <div class="bullet bullet-col" *ngFor="let col of matrixConverted.col"></div>
+    </div>
+</div>

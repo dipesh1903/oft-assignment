@@ -1,0 +1,15 @@
+.container {
+    .bullet-row {
+        display: flex;
+        .bullet {
+            margin: 0.2em;
+            width: 10px;
+            height: 10px;
+            background: #663399 0% 0% no-repeat padding-box;
+            opacity: 0.3;
+        }
+        .bullet-col {
+            display: flex;
+        }
+    }
+}

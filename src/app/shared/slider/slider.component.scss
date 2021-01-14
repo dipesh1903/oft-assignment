@@ -1,0 +1,40 @@
+.container {
+    padding: 0.5em 0;
+    .heading {
+        font-family: 'Montserrat-Regular';
+        font-size: 12px;
+        color: black;
+        padding-bottom: 0.4em;
+    }
+    .value {
+        font-family: 'Montserrat-SemiBold';
+        font-size: 15px;
+        color: black;
+    }
+    .range {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Montserrat-Light';
+        color: grey;
+        font-size: 10px;
+    }
+}
+
+.slider {
+    border-radius: 8px;
+    height: 4px;
+    width: 100%;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    width: 12px;
+    -webkit-appearance: none;
+    height: 12px;
+    background: #674A98;
+    border-radius: 50%;
+    padding: 2px;
+    cursor: pointer;
+    border: 1.5px solid white;
+}

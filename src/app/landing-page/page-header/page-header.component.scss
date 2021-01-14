@@ -1,0 +1,45 @@
+.page-header-container {
+    z-index: 2;
+    padding: 0 3em 0 2em;
+    .logo {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+    }
+    .header-content {
+        flex-wrap: wrap;
+        div {
+            font: normal normal normal 25px/34px Open Sans;
+            letter-spacing: 0px;
+            color: #222222;
+            opacity: 1;
+            margin: 0 0.6em;
+            font-size: 25px;
+            cursor: pointer;
+            font-family: 'Montserrat-Medium';
+            margin: 0.4em 0.6em;
+        }
+        .login-btn {
+            cursor: pointer;
+            box-shadow: 0px 0px 20px #00000033;
+            border: 2px solid #663399;
+            border-radius: 24px;
+            opacity: 1;
+            letter-spacing: 0px;
+            color: #663399;
+            font-size: 16px;
+            padding: 0 0.8em;
+        }
+        .signup-btn {
+            background: transparent linear-gradient(90deg, #9F62C9 0%, #663399 100%) 0% 0% no-repeat padding-box;
+            box-shadow: 0px 0px 20px #00000033;
+            border-radius: 24px;
+            opacity: 1;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            font-size: 16px;
+            padding: 0.1em 0.6em;
+            cursor: pointer;
+        }
+    }
+}

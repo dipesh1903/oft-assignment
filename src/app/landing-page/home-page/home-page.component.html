@@ -1,0 +1,63 @@
+<div class="home-page-container">
+    <img class="right-circle-img" [src]="imgSrc.rightCircleSrc" />
+    <img class="left-circle" [src]="imgSrc.leftCircleSrc" />
+    <div class="header-wrapper">
+        <app-page-header></app-page-header>
+    </div>
+    <div class="section">
+        <div class="top-info">
+
+            <div class="text-container">
+                <div class="text">
+                    We make it super simple
+                </div>
+                <div class="underline"></div>
+            </div>
+            <img class="video-img" [src]="imgSrc.videoImgSrc" />
+            <div class="bullet-rect">
+                <app-bullet-rectangle [matrix]="bulletRect"></app-bullet-rectangle>
+            </div>
+        </div>
+        <div class="calc-widget">
+            <div class="calculator">
+                <app-calculator (sendValue)="getCalculatorDetails($event)"></app-calculator>
+            </div>
+            <div class="subtotal">
+                <app-calculator-total [subtotalValues]="subtotalValues"></app-calculator-total>
+            </div>
+            <div class="bullet-rect">
+                <app-bullet-rectangle [matrix]="bulletRect"></app-bullet-rectangle>
+            </div>
+        </div>
+    </div>
+    <div class="footer-content">
+        <div class="left">
+            <div class="col1">
+                <div class="card" *ngFor="let data of fakeData.col1">
+                    <app-cards [cardData]="data"></app-cards>
+                </div>
+            </div>
+            <div class="col2">
+                <div class="card" *ngFor="let data of fakeData.col2">
+                    <app-cards [cardData]=" data "></app-cards>
+                </div>
+            </div>
+        </div>
+        <div class="right ">
+            <div class="text-container ">
+                <div class="text ">
+                    We make it super simple
+                </div>
+                <div class="underline "></div>
+            </div>
+            <div class="desc ">
+                Get your hands on a term loan that’s crafted for your business
+            </div>
+            <div class="account-btn ">
+                {{btnText.openAccount}}
+            </div>
+        </div>
+        <img class="wave " [src]="imgSrc.waveFooterSrc " />
+    </div>
+
+</div>

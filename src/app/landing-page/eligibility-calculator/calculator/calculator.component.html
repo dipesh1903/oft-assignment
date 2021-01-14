@@ -1,0 +1,27 @@
+<div *ngIf="isEmpty(calc_headings)" class="eligibility-calculator">
+    <div class="title">Eligibility Calculator</div>
+    <div class="container">
+        <div class="monthly-income" *ngIf="isEmpty(slider_MI)">
+            <app-slider (sendValue)="getSelectedIncome($event)" [sliderContent]="slider_MI"></app-slider>
+        </div>
+        <div class="monthly-expense" *ngIf="isEmpty(slider_ME)">
+            <app-slider (sendValue)="getSelectedExpense($event)" [sliderContent]="slider_ME"></app-slider>
+        </div>
+        <div class="emi-selection" *ngIf="isEmpty(emiOptions)">
+            <app-dropdown (sendValue)="getEmiPeriod($event)" [optionsData]="emiOptions"></app-dropdown>
+        </div>
+        <div class="additional-loan">
+            <div class="static">
+                {{calc_headings.EXISTING_LOAN_Q}}
+            </div>
+            <div class="value">
+                <app-switch (sendValue)="getEmiReq($event)"></app-switch>
+            </div>
+        </div>
+        <div class="emi-value">
+            <div class="static2"> {{calc_headings.EMI_VALUE}}</div>
+            <span>&#8377; </span>
+            <input class="value2" type="string" [ngModel]="emiAmount | formatedCurrency" (ngModelChange)="formatedEmi($event)" />
+        </div>
+    </div>
+</div>
